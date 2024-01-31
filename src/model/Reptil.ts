@@ -1,7 +1,7 @@
 class Reptil extends Animal {
-    private tipo_de_escama: boolean;
+    private tipo_de_escama: string;
 
-    constructor(_tipo_de_escama: boolean,
+    constructor(_tipo_de_escama: string,
                 _nome: string,
                 _idade: number,
                 _genero: string) {
@@ -9,11 +9,11 @@ class Reptil extends Animal {
         this.tipo_de_escama = _tipo_de_escama;
     }
 
-    public setTipo_de_escama(tipo_de_escama: boolean): void {
+    public setTipo_de_escama(tipo_de_escama: string): void {
         this.tipo_de_escama = tipo_de_escama;
     }
 
-    public getTipo_de_escama(): boolean {
+    public getTipo_de_escama(): string {
         return this.tipo_de_escama;
     }
 }

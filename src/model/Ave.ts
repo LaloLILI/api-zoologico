@@ -1,7 +1,7 @@
 class Ave extends Animal {
-    private envergadura: boolean;
+    private envergadura: number;
 
-    constructor(_envergadura: boolean,
+    constructor(_envergadura: number,
                 _nome: string,
                 _idade: number,
                 _genero: string) {
@@ -9,11 +9,11 @@ class Ave extends Animal {
         this.envergadura = _envergadura;
     }
 
-    public setEnvergadura(envergadura: boolean): void {
+    public setEnvergadura(envergadura: number): void {
         this.envergadura = envergadura;
     }
 
-    public getEnvergadura(): boolean {
+    public getEnvergadura(): number {
         return this.envergadura;
     }
 }
